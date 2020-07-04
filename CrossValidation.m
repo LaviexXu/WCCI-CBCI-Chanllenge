@@ -3,6 +3,7 @@
 % Date: Jul. 1, 2020
 % E-mail: wenz@hust.edu.cn
 clear,clc;
+addpath('./utils/')
 delay=[0,0.25,0.5,0.75,1];
 sample_length = [2,3,4];
 results=zeros(8,1);

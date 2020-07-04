@@ -58,5 +58,6 @@ Other toolbox:
 ## III. References
 
 This code refers to the following papers:
+
 [1] Wen Zhang, Dongrui Wu, “Manifold Embedded Knowledge Transfer for Brain-Computer Interfaces,” IEEE Trans. on Neural Systems & Rehabilitation Engineering, 28(5), pp. 1117-1127, 2020.
 [2] Qian Wang, Toby P. Breckon, Unsupervised Domain Adaptation via Structured Prediction Based Selective Pseudo-Labeling, In proceedings of AAAI Conference on Artificial Intelligence, 2020.
