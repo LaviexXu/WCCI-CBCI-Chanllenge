@@ -14,7 +14,7 @@ We used **leave-one-out cross validation** to determine whether to filter the si
 **Common Spatial Pattern(CSP)** filters are used to extract features from the covariance matrices of each subject.
 
 #### Classification Approach
-**Linear Discriminant Analysis** is used for classification in our solution.
+**Support Vector Machine** is used for classification in our solution.
 
 
 ### 2) Cross Subject Classification
@@ -41,7 +41,7 @@ Code files introduction:
 
 **CrossValidation.m** -- demo file. It performs within-subject leave-one-out cross validation to determine the optimal parameters for each subject. After running this file, a mat format file containing the selected parameters in cross validation would be saved.
 
-**demo_withSubject.m** -- demo file. It first loads the parameter file saved from **CrossValidation.m** and then estimates the labels of test data of subject P01~P08.
+**demo_withSubject.m** -- demo file. It first loads the parameter file saved from CrossValidation.m and then estimates the labels of test data of subject P01~P08.
 
 **demo_crossSubject.m** -- demo file. It's the implementation of the cross subject validation. We use the eight training subjects to learn an adaptive classifier for predicting the labels of test data of subject P09 and P10.
 
@@ -51,7 +51,9 @@ Code files introduction:
 
 **/utils/SPL.m** -- function file that implements the SPL approach. Please find the specific input/output instructions in the function comments.
 
+Other toolbox:
 
+**covariance toolbox** -- A toolbox that contains a set of functions dedicated to covariance matrices estimation and manipulation.This toolbox is downloaded from https://github.com/alexandrebarachant/covariancetoolbox
 
 ## III. References
 

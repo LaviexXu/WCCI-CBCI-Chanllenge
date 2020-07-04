@@ -3,7 +3,7 @@
 % Date: Jul. 1, 2020
 % E-mail: wenz@hust.edu.cn
 
-load('within_CSPSVM.mat');
+load('optimal_param_within.mat');
 addpath('./utils/');
 Ytest = [];
 for sub=1:8
@@ -27,12 +27,11 @@ for sub=1:8
     [train_csp, test_csp] = CSPfeature(trainData, trainLabel, testData);
     SVM = fitcsvm(train_csp,trainLabel,'KernelFunction','linear');
     Ypred=predict(SVM,test_csp);
-    fprintf('subject %d class 1 ratio: %f\n',sub, mean(Ypred==1));
     Ytest = [Ytest,Ypred];
 end
 
 %% save to xlsx
-filename = 'HUSTBCI_yfx_WithSubject.xlsx';
+filename = 'HUSTBCI_Xu_WithSubject.xlsx';
 
 for j=1:8
     Ypred = Ytest(:,j);

@@ -81,7 +81,7 @@ rmpath('./utils/');
 
 
 %% Save to xlsx
-filename = 'HUSTBCI_Xu_CrossSubject.xlsx';
+filename = 'HUSTBCI__CrossSubject.xlsx';
 sheet = ['P09', 'P10'];
 for j=1:2
     Ypred = Ytest(:,j);

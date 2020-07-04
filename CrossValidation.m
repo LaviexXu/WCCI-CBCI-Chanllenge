@@ -35,9 +35,9 @@ for sub=1:8
                     % extract csp features
                     [train_csp, test_csp] = CSPfeature(trainData,trainLabel,testData);
  
-                    % train the LDA model
-                    LDA = fitcdiscr(train_csp,trainLabel);
-                    pred_y(test_sample)=predict(LDA,test_csp);
+                    % train the SVM model
+                    SVM = fitcsvm(train_csp,trainLabel,'KernelFunction','linear');
+                    pred_y(test_sample)=predict(SVM,test_csp);
                 end
                 % compute the kappa index in leave-one-out cross validation
 
@@ -56,4 +56,4 @@ for sub=1:8
     end
 
 end
-save('within_CSPLDA.mat', 'optimal_param');
+save('optimal_param_within.mat', 'optimal_param');
