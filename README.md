@@ -1,6 +1,6 @@
 # Solutions of Clinical BCI Challenge-WCCI2020 -- HUSTBCI
 
-We introduce our method in this competition briefly from three aspects: Experimental Settings, running the code and references. If there are any questions, please contact wenz@hust.edu.cn.
+We introduce our method in this competition briefly from three aspects: experimental settings, brief introduction to our code and references. If there are any questions, please contact wenz@hust.edu.cn.
 
 ## I. Experimental Settings
 
@@ -25,11 +25,11 @@ We use **leave one subject out cross validation** to choose the best frequency b
 
 #### Feature Extraction
 
-We use tangent space mapping to extract tangent features. Considering there are 12 electrodes in the dataset, thus we can extract the 78-dimensional features.
+We use tangent space mapping to extract tangent features. Considering there are 12 electrodes in the dataset, we extract 78-dimensional features for each sample.
 
 #### Classification Approach
 
-We used two transfer learning approaches in our experiments: **Centroid Alignment (CA)** [1] approach to align the covariance matrices of different subjects firstly, and then use and **Selective Pseudo-Labeling (SPL)** [2] approach to facilitate accurate pseudo-labeling by structured prediction to predict the labels of the unseen subject in an unsupervised setting. The hyperparameters of SPL were selected according to the leave one subject out validation results. In our experiments, we set the subspace dimension as 10, iteration number as 10, and the regularization parameter $\alpha$ as 1.
+We used two transfer learning approaches in our experiments: **Centroid Alignment (CA)** [1] approach are performed to align the covariance matrices of different subjects at first and then we use and **Selective Pseudo-Labeling (SPL)** [2] approach to facilitate accurate pseudo-labeling by structured prediction to predict the labels of the unseen subject in an unsupervised setting. The hyperparameters of SPL were selected according to the leave one subject out validation results. In our experiments, we set the subspace dimension to 10, iteration number to 10, and the regularization parameter $\alpha$ to 1.
 
 
 
