@@ -41,7 +41,7 @@ Code files introduction:
 
 **CrossValidation.m** -- demo file. It performs within-subject leave-one-out cross validation to determine the optimal parameters for each subject. After running this file, a mat format file containing the selected parameters in cross validation would be saved.
 
-**demo_withSubject.m** -- demo file. It first loads the parameter file saved from CrossValidation.m and then estimates the labels of test data of subject P01~P08.
+**demo_withinSubject.m** -- demo file. It first loads the parameter file saved from CrossValidation.m and then estimates the labels of test data of subject P01~P08.
 
 **demo_crossSubject.m** -- demo file. It's the implementation of the cross subject validation. We use the eight training subjects to learn an adaptive classifier for predicting the labels of test data of subject P09 and P10.
 
@@ -53,7 +53,7 @@ Code files introduction:
 
 Other toolbox:
 
-**covariance toolbox** -- A toolbox that contains a set of functions dedicated to covariance matrices estimation and manipulation.This toolbox is downloaded from https://github.com/alexandrebarachant/covariancetoolbox
+**covariance toolbox** -- A toolbox that contains a set of functions dedicated to covariance matrices estimation and manipulation.This toolbox is downloaded from https://github.com/alexandrebarachant/covariancetoolbox.
 
 ## III. References
 

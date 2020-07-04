@@ -31,7 +31,7 @@ for sub=1:8
 end
 
 %% save to xlsx
-filename = 'HUSTBCI_Xu_WithSubject.xlsx';
+filename = 'HUSTBCI_Xu_WithinSubject.xlsx';
 
 for j=1:8
     Ypred = Ytest(:,j);
